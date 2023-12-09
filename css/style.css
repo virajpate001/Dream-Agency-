@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ================================================== */
+/* body */
+/* ================================================== */
+
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #bbbbbb;
+    line-height: 1.8em;
+    padding: 0;
+
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+.mb30{
+    margin-bottom: 20px;
+}
+
+.mt25{
+    margin-top: 25px;
+}
+
+
+/* ================================================== */
+/*  header	*/
+/* ================================================== */
+
+.main-header{
+    padding: 30px 0;
+}
+
+.main-header .logo img{
+ width: auto;
+}
+
+.lmenu ul li{
+    margin-right: 20px;
+}
+
+.lmenu ul li a{
+    color: #331B3B;
+}
+
+.menu-active{
+    font-weight: bold;
+}
+
+.social-icon ul,.lmenu ul{
+    margin: 0;
+}
+
+.social-icon ul li a{
+    color: #331B3B;
+    font-size: 22px;
+}
+
+.main-header ul{
+    padding:0 ;
+}
+
+img{
+    width: 100%;
+    margin: auto;
+}
+
+/* ================================================== */
+/*  banner	*/
+/* ================================================== */
+
+.head-bold{
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.banner-text h1{
+    font-weight: 500;
+}
+
+span.bory {
+    border-bottom: 12px solid #fdc021;
+}
+
+.dark-btn{
+    color: #fff;
+    background-color: #331B3B;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.main-banner .banner-text{
+    padding-right: 85px;
+}
+
+.banner-img{
+    position: relative;
+}
+
+.rect1{
+    position: absolute;
+    top: -42px;
+    z-index: -1;
+    right: 125px;
+    rotate: 5deg;
+}
+
+.rect1 img{
+    width: 350px;
+    height: auto;
+}
+
+.rect2{
+    position: absolute;
+    top: -100px;
+    right: -110px;
+    z-index: -5;
+}
+
+.rect2 img{
+    width: 470px;
+}
+
+
+
+
+
+
+
+/* ================================================== */
+/* R E S P O N S I V E */
+/* ================================================== */
+
+@media only screen and (min-width: 768px) {
+    .dh{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	.mh{
+        display: none;
+    }
+
+    .mob-header{
+        width: 90%;
+        margin: auto;
+        padding: 20px 0;
+    }
+
+    .nvs{
+        font-size: 28px;
+    }
+}
