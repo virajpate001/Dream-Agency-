@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+   
 }
 
 /* ================================================== */
@@ -24,70 +25,80 @@ li {
 }
 
 a {
-    text-decoration: none!important;
+    text-decoration: none !important;
 }
 
-.mb30{
+.mb30 {
     margin-bottom: 20px;
 }
 
-.mt25{
+.mt25 {
     margin-top: 25px;
 }
 
+.mb60{
+    margin-bottom: 60px;
+}
+
+.ptb{
+    padding: 50px 0;
+}
 
 /* ================================================== */
 /*  header	*/
 /* ================================================== */
 
-.main-header{
+.main-header {
     padding: 30px 0;
 }
 
-.main-header .logo img{
- width: auto;
+.main-header .logo img {
+    width: auto;
 }
 
-.lmenu ul li{
+.lmenu ul li {
     margin-right: 20px;
 }
 
-.lmenu ul li a{
+.lmenu ul li a {
     color: #331B3B;
 }
 
-.menu-active{
+.menu-active {
     font-weight: bold;
 }
 
-.social-icon ul,.lmenu ul{
+.social-icon ul,
+.lmenu ul {
     margin: 0;
 }
 
-.social-icon ul li a{
+.social-icon ul li a {
     color: #331B3B;
     font-size: 22px;
 }
 
-.main-header ul{
-    padding:0 ;
+.main-header ul {
+    padding: 0;
 }
 
-img{
+img {
     width: 100%;
     margin: auto;
 }
+
+
 
 /* ================================================== */
 /*  banner	*/
 /* ================================================== */
 
-.head-bold{
+.head-bold {
     font-weight: 800;
     font-size: 48px;
 }
 
-.banner-text h1{
+.banner-text h1 {
     font-weight: 500;
 }
 
@@ -95,7 +106,7 @@ span.bory {
     border-bottom: 12px solid #fdc021;
 }
 
-.dark-btn{
+.dark-btn {
     color: #fff;
     background-color: #331B3B;
     padding: 10px 20px;
@@ -104,39 +115,46 @@ span.bory {
     font-size: 12px;
 }
 
-.main-banner .banner-text{
+.main-banner .banner-text {
     padding-right: 85px;
 }
 
-.banner-img{
+.banner-img {
     position: relative;
 }
 
-.rect1{
-    position: absolute;
-    top: -42px;
+
+/* ================================================== */
+/*  What We do section	*/
+/* ================================================== */
+
+.hbold{
+    font-weight: 800;
+}
+
+.subheading {
+    font-weight: 400;
+}
+
+.bor {
+    position: relative;
+}
+
+.bor hr{
+    height: 8px!important;
+    background-color: #fdc021;
+    opacity: 1;
+    width: 100%;
+    margin: 0;
+    left: 0%;
+    bottom: 8px;
     z-index: -1;
-    right: 125px;
-    rotate: 5deg;
-}
-
-.rect1 img{
-    width: 350px;
-    height: auto;
-}
-
-.rect2{
     position: absolute;
-    top: -100px;
-    right: -110px;
-    z-index: -5;
 }
 
-.rect2 img{
-    width: 470px;
+.mb30{
+    margin-bottom: 30px;
 }
-
-
 
 
 
@@ -147,25 +165,85 @@ span.bory {
 /* ================================================== */
 
 @media only screen and (min-width: 768px) {
-    .dh{
+    .dh {
         display: none;
+    }
+
+    .rect1 {
+        position: absolute;
+        top: -42px;
+        z-index: -1;
+        right: 125px;
+        rotate: 5deg;
+    }
+
+    .rect1 img {
+        width: 350px;
+        height: auto;
+    }
+
+    .rect2 {
+        position: absolute;
+        top: -100px;
+        right: -110px;
+        z-index: -5;
+    }
+
+    .rect2 img {
+        width: 470px;
     }
 }
 
 
 @media only screen and (max-width: 768px) {
 
-	.mh{
+    .mh {
         display: none;
     }
 
-    .mob-header{
+    .mob-header {
         width: 90%;
         margin: auto;
         padding: 20px 0;
     }
 
-    .nvs{
+    .nvs {
         font-size: 28px;
     }
+
+    .head-bold {
+        font-size: 36px;
+    }
+
+    .main-banner .row {
+        flex-direction: column-reverse;
+        padding: 20px 0;
+    }
+
+    .rect1 {
+        position: absolute;
+        top: -25px;
+        left: 50px;
+        z-index: -1;
+    }
+
+    .rect1 img {
+        width: 200px;
+        rotate: -12deg;
+    }
+
+    .rect2{
+       display: none;
+    }
+
+    
+
+    .main-banner .banner-text {
+        padding-right: 40px;
+        /* padding: 21px; */
+        padding-top: 30px;
+    }
+
+    
+
 }
